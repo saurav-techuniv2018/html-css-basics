@@ -5,6 +5,42 @@
 <head>
   <meta charset="utf-8">
   <title>My page</title>
+  <style>
+    body {
+      background-color: darkseagreen;
+      color: white;
+      font-family: Courier New, Courier, monospace;
+    }
+
+    h1 {
+      font-weight: 100;
+    }
+
+    p {
+      font-style: oblique;
+    }
+
+    div {
+      text-transform: uppercase;
+    }
+
+    .divs {
+      font-size: 32px;
+      border: 1px solid black;
+      margin: 32px;
+      padding: 16px;
+      border-radius: 16px;
+      text-align: center;
+      background-color: #226cc0
+    }
+
+    #test-div {
+      text-transform: uppercase !important;
+      font-weight: bolder;
+      font-size: 64px;
+      font-family: 'Fira Mono Medium for Powerline','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+  </style>
 </head>
 
 <body>
@@ -12,6 +48,8 @@
   <p>
     HTML - Hello World!
   </p>
+
+  <div id="test-div" class="divs" style="text-transform: capitalize;">Awesome div</div>
 </body>
 
 </html>
