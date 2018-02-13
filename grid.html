@@ -31,6 +31,47 @@
     footer>p {
       margin: 0;
     }
+
+    section {
+      margin: auto 8px;
+    }
+
+    aside {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+
+    /* Sizing */
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    /* Grid Layout */
+
+    body {
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas: "header header" "main aside" "main aside" "footer footer";
+    }
+
+    header {
+      grid-area: header;
+    }
+
+    .main-section {
+      grid-area: main;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+
+    footer {
+      grid-area: footer;
+    }
   </style>
 </head>
 
