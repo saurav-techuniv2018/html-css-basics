@@ -37,8 +37,7 @@
     }
 
     aside {
-      margin-left: 8px;
-      margin-right: 8px;
+      margin: 8px;
     }
 
     /* Sizing */
@@ -71,6 +70,16 @@
 
     footer {
       grid-area: footer;
+    }
+
+    /* Media queries */
+
+    @media screen and (max-width: 600px) {
+      body {
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "main main" "aside aside" "footer footer"
+      }
     }
   </style>
 </head>
